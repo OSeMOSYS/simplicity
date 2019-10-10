@@ -1,6 +1,7 @@
 # OSeMOSYS Example Model: Simplicity
 
 [![DOI](https://zenodo.org/badge/214192147.svg)](https://zenodo.org/badge/latestdoi/214192147)
+[![goodtables.io](https://goodtables.io/badge/github/KTH-dESA/simplicity.svg)](https://goodtables.io/github/KTH-dESA/simplicity)
 
 This is an example OSeMOSYS model published as a Frictionless Data [Tabular Data Package](https://frictionlessdata.io/specs/tabular-data-package/).
 
