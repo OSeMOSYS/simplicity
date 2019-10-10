@@ -2359,21 +2359,6 @@
                         "format": "default"
                     },
                     {
-                        "name": "REGION",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "REGION",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
-                        "name": "REGION",
-                        "type": "string",
-                        "format": "default"
-                    },
-                    {
                         "name": "FUEL",
                         "type": "string",
                         "format": "default"
@@ -2401,13 +2386,6 @@
                         }
                     },
                     {
-                        "fields": "REGION",
-                        "reference": {
-                            "resource": "REGION",
-                            "fields": "VALUE"
-                        }
-                    },
-                    {
                         "fields": "FUEL",
                         "reference": {
                             "resource": "FUEL",
@@ -2423,7 +2401,6 @@
                     }
                 ],
                 "primaryKey": [
-                    "REGION",
                     "REGION",
                     "FUEL",
                     "YEAR"
@@ -3219,7 +3196,7 @@
                     }
                 ],
                 "missingValues": [
-                    "1"
+                    "0"
                 ],
                 "foreignKeys": [
                     {
@@ -3389,6 +3366,23 @@
                     "MODE_OF_OPERATION"
                 ]
             }
+        }
+    ],
+    "licenses": [
+        {
+            "name": "CC-BY-4.0",
+            "path": "https://creativecommons.org/licenses/by/4.0/",
+            "title": "Creative Commons Attribution 4.0"
+        }
+    ],
+    "title": "The OSeMOSYS Simplicity Example Model",
+    "name": "osemosys_model_simplicity",
+    "contributors": [
+        {
+            "title": "Will Usher",
+            "email": "wusher@kth.se",
+            "path": "http://www.kth.se/wusher",
+            "role": "author"
         }
     ]
 }
