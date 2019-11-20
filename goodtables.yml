@@ -1,0 +1,6 @@
+settings:
+  row_limit: 2000
+  skip_checks:
+    # You can also skip individual checks
+    - pattern-constraint
+    - missing-header
