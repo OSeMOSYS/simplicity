@@ -1,6 +1,9 @@
 settings:
-  row_limit: 2000
   skip_checks:
-    # You can also skip individual checks
     - pattern-constraint
     - missing-header
+  error_limit: 10
+  row_limit: 5000
+
+datapackages:
+  - 'datapackage.json'
