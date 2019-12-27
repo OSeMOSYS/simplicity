@@ -326,8 +326,7 @@
                     },
                     {
                         "name": "VALUE",
-                        "type": "number",
-                        "format": "default"
+                        "type": "number"
                     }
                 ],
                 "missingValues": [
