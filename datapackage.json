@@ -2,6 +2,29 @@
     "profile": "tabular-data-package",
     "resources": [
         {
+            "path": "data/default_values.csv",
+            "profile": "tabular-data-resource",
+            "name": "default_values",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "name",
+                        "type": "string",
+                        "format": "default"
+                    },
+                    {
+                        "name": "default_value",
+                        "type": "number",
+                        "format": "default"
+                    }
+                ],
+                "missingValues": []
+            }
+        },
+        {
             "path": "data/MODE_OF_OPERATION.csv",
             "profile": "tabular-data-resource",
             "name": "MODE_OF_OPERATION",
@@ -16,9 +39,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    ""
-                ]
+                "missingValues": []
             }
         },
         {
@@ -51,9 +72,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -114,9 +133,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -177,9 +194,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "99999"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -235,9 +250,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "1"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -285,9 +298,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -326,12 +337,11 @@
                     },
                     {
                         "name": "VALUE",
-                        "type": "number"
+                        "type": "number",
+                        "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0.05"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -376,9 +386,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -430,18 +438,16 @@
                     },
                     {
                         "name": "YEAR",
-                        "type": "string",
+                        "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "VALUE",
-                        "type": "string",
+                        "type": "number",
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "999"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -512,9 +518,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -576,9 +580,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    ""
-                ]
+                "missingValues": []
             }
         },
         {
@@ -602,18 +604,16 @@
                     },
                     {
                         "name": "YEAR",
-                        "type": "string",
+                        "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "VALUE",
-                        "type": "string",
+                        "type": "number",
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -674,9 +674,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -747,9 +745,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -826,9 +822,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -884,9 +878,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "TIMESLICE",
@@ -934,9 +926,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "TIMESLICE",
@@ -975,18 +965,16 @@
                     },
                     {
                         "name": "YEAR",
-                        "type": "string",
+                        "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "VALUE",
-                        "type": "string",
+                        "type": "number",
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0.00137"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "DAILYTIMEBRACKET",
@@ -1030,18 +1018,16 @@
                     },
                     {
                         "name": "YEAR",
-                        "type": "string",
+                        "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "VALUE",
-                        "type": "string",
+                        "type": "number",
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -1107,9 +1093,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -1169,18 +1153,16 @@
                     },
                     {
                         "name": "YEAR",
-                        "type": "string",
+                        "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "VALUE",
-                        "type": "string",
+                        "type": "number",
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -1241,9 +1223,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -1289,9 +1269,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    ""
-                ]
+                "missingValues": []
             }
         },
         {
@@ -1319,9 +1297,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -1359,9 +1335,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    ""
-                ]
+                "missingValues": []
             }
         },
         {
@@ -1404,9 +1378,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -1478,9 +1450,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "1"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -1533,9 +1503,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "99999"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -1591,9 +1559,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "99999"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -1646,9 +1612,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "99999"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -1714,9 +1678,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -1776,18 +1738,16 @@
                     },
                     {
                         "name": "YEAR",
-                        "type": "string",
+                        "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "VALUE",
-                        "type": "string",
+                        "type": "number",
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -1843,9 +1803,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -1883,9 +1841,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    ""
-                ]
+                "missingValues": []
             }
         },
         {
@@ -1913,9 +1869,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -1968,9 +1922,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "99999"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -2036,9 +1988,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -2098,18 +2048,16 @@
                     },
                     {
                         "name": "YEAR",
-                        "type": "string",
+                        "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "VALUE",
-                        "type": "string",
+                        "type": "number",
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -2155,9 +2103,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    ""
-                ]
+                "missingValues": []
             }
         },
         {
@@ -2175,9 +2121,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    ""
-                ]
+                "missingValues": []
             }
         },
         {
@@ -2205,9 +2149,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -2251,18 +2193,16 @@
                     },
                     {
                         "name": "YEAR",
-                        "type": "string",
+                        "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "VALUE",
-                        "type": "string",
+                        "type": "number",
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -2318,9 +2258,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -2364,18 +2302,16 @@
                     },
                     {
                         "name": "YEAR",
-                        "type": "string",
+                        "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "VALUE",
-                        "type": "string",
+                        "type": "number",
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -2441,9 +2377,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "1"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -2502,9 +2436,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "1"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -2540,18 +2472,16 @@
                     },
                     {
                         "name": "YEAR",
-                        "type": "string",
+                        "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "VALUE",
-                        "type": "string",
+                        "type": "number",
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "7"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "SEASON",
@@ -2607,9 +2537,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "TIMESLICE",
@@ -2657,9 +2585,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "TIMESLICE",
@@ -2697,9 +2623,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    ""
-                ]
+                "missingValues": []
             }
         },
         {
@@ -2717,9 +2641,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    ""
-                ]
+                "missingValues": []
             }
         },
         {
@@ -2743,18 +2665,16 @@
                     },
                     {
                         "name": "YEAR",
-                        "type": "string",
+                        "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "VALUE",
-                        "type": "string",
+                        "type": "number",
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "1"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -2815,9 +2735,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -2863,9 +2781,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    ""
-                ]
+                "missingValues": []
             }
         },
         {
@@ -2898,9 +2814,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -2946,9 +2860,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    ""
-                ]
+                "missingValues": []
             }
         },
         {
@@ -2967,18 +2879,16 @@
                     },
                     {
                         "name": "YEAR",
-                        "type": "string",
+                        "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "VALUE",
-                        "type": "string",
+                        "type": "number",
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "1"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -3031,9 +2941,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -3089,9 +2997,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "99999"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -3130,18 +3036,16 @@
                     },
                     {
                         "name": "YEAR",
-                        "type": "string",
+                        "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "VALUE",
-                        "type": "string",
+                        "type": "number",
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -3185,18 +3089,16 @@
                     },
                     {
                         "name": "YEAR",
-                        "type": "string",
+                        "type": "integer",
                         "format": "default"
                     },
                     {
                         "name": "VALUE",
-                        "type": "string",
+                        "type": "number",
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -3257,9 +3159,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
@@ -3325,9 +3225,7 @@
                         "format": "default"
                     }
                 ],
-                "missingValues": [
-                    "0"
-                ],
+                "missingValues": [],
                 "foreignKeys": [
                     {
                         "fields": "REGION",
