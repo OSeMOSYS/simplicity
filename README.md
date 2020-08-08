@@ -14,7 +14,7 @@ You can use **otoole** to generate a GNU MathProg data file from the dataset wit
 # Install the OSeMOSYS toolkit
 pip install otoole>=0.5.4
 # Download the dataset and build a GNU MathProg datafile
-otoole convert datapackage datafile https://zenodo.org/record/3479823/files/OSeMOSYS/simplicity-v0.2.zip ./simplicity.txt
+otoole convert datapackage datafile https://github.com/OSeMOSYS/simplicity ./simplicity.txt
 # Solve the model
 glpsol -m OSeMOSYS.txt -d simplicity.txt
 ```
