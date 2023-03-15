@@ -1,0 +1,18 @@
+{
+    "license": "CC-BY-4.0",
+    "upload_type": "dataset",
+    "title": "OSeMOSYS Example Model: Simplicity",
+    "creators": [
+        {
+            "name": "Will Usher",
+            "affiliation": "KTH Royal Institute of Technology",
+            "orcid": "0000-0001-9367-1791"
+        },
+        {
+            "name": "Trevor Barnes",
+            "affiliation": "Simon Fraser University",
+            "orcid": "0000-0003-2458-2968"
+        }
+    ],
+    "access_right": "open"
+}
