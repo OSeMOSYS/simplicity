@@ -13,16 +13,21 @@ the free and open-source solver [GLPK](https://www.gnu.org/software/glpk/)
 
 ```bash
 # Install the OSeMOSYS toolkit
-pip install otoole>=1.0.0
+pip install "otoole>=1.0.0"
 
 # Download the dataset. On Linux or OSX use wget, otherwise download and unzip
-wget https://zenodo.org/record/7736670/files/OSeMOSYS/simplicity-v1.0.zip?download=1
+wget https://zenodo.org/record/7736836/files/OSeMOSYS/simplicity-v1.1.zip?download=1
+unzip simplicity-v1.1.zip?download=1 -d simplicity
 
-unzip simplicity-v1.0 -d simplicity
+# Move the data to a new directory called simplicity/
+mv simplicity/OSeMOSYS-simplicity-74b9610/* simplicity
+rm -R simplicity/OSeMOSYS-simplicity-74b9610/
+
+# Change working directory to the new simplicity folder 
+cd simplicity 
 
 # Create the GNUMathProg data file with otoole
-mv simplicity/OSeMOSYS-simplicity-f0d3e83/* simplicity
-otoole convert csv datafile simplicity/data ./simplicity.txt simplicity/config.yaml
+otoole convert csv datafile data/ ./simplicity.txt config.yaml
 
 # Solve the model
 glpsol -m OSeMOSYS.txt -d simplicity.txt
